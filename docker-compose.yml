@@ -1,0 +1,8 @@
+mesos_master:
+    image: your_image_name
+    net: "host"
+    privileged: true
+    volumes:
+      - /var/mesos:/var/mesos
+    container_name: mesos_master
+    env_file: mesos_master_env
